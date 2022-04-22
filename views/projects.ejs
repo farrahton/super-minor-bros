@@ -1,0 +1,12 @@
+<%- include('./partials/head') %>
+
+
+<h1>test</h1>
+
+<% for (key in users) { %>
+  <p><%- users[key].node.owner.login %></p>
+  <p><%- users[key].node.owner.repositories.totalCount %></p>
+<% } %>
+
+
+<%- include('./partials/foot') %>
